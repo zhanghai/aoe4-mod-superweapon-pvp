@@ -1,4 +1,4 @@
-# AOE4 Mod: Superweapon (PvP)
+# AoE4 Mod: Superweapon (PvP)
 
 ![Mod image](assets/mod.png)
 
