@@ -1,0 +1,94 @@
+<instance version="6" override_type="merge" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1478573700" List.ParentItemID="1478573700">
+			<list name="requirement_table">
+				<template_reference name="required" value="requirements\required_not" List.ItemID="-1543773766" List.ParentItemID="-1543773766">
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="2137606291" List.ParentItemID="2137606291">
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_structure" List.ItemID="1765478421" List.ParentItemID="1765478421">
+									<instance_reference name="structure_name" value="ebps\races\japanese\buildings\building_siege_camp_jpn" mod="459dc75a89de413aba97f95a10099049" overrideParent="True" />
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1116699682" List.ParentItemID="1116699682">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\japanese" overrideParent="True" List.ItemID="1499129841" List.ParentItemID="1499129841" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="-306240354" List.ParentItemID="-306240354">
+			<list name="type_list">
+				<group name="type" List.ItemID="-193587623" List.ListAction="Append">
+					<enum name="interaction_type" value="deposit_relic" />
+					<int name="prefer_number" value="-1" overrideParent="True" />
+					<int name="max_number" value="1" overrideParent="True" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1600836472" List.ParentItemID="-1600836472">
+			<list name="abilities">
+				<instance_reference name="ability" value="abilities\always_on_abilities\japanese\shinto_sacred_object_buff_jpn" List.ItemID="-2107716552" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1468776515" List.ParentItemID="1468776515">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\japanese\wonder_age4_nikko_toshogu_jpn" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741838" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_siege_camp" mod="459dc75a89de413aba97f95a10099049" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1798269813" List.ParentItemID="1798269813">
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_not" List.ItemID="1106786276" List.ParentItemID="1106786276">
+						<list name="requirement_table">
+							<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="2137606291" List.ParentItemID="2137606291">
+								<list name="requirements">
+									<template_reference name="requirement" value="requirements\required_structure" List.ItemID="1765478421" List.ParentItemID="1765478421">
+										<instance_reference name="structure_name" value="ebps\races\japanese\buildings\building_siege_camp_jpn" mod="459dc75a89de413aba97f95a10099049" overrideParent="True" />
+									</template_reference>
+								</list>
+							</template_reference>
+						</list>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-787035535" List.ParentItemID="-787035535">
+				<list name="race_type_list">
+					<instance_reference name="race_type" value="racebps\japanese" overrideParent="True" List.ItemID="2103749788" List.ParentItemID="2103749788" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="-1927786091" List.ParentItemID="-1927786091">
+				<list name="type_list">
+					<group name="type" List.ItemID="1475125412" List.ListAction="Append">
+						<enum name="interaction_type" value="deposit_relic" />
+						<int name="prefer_number" value="-1" overrideParent="True" />
+						<int name="max_number" value="1" overrideParent="True" />
+						<enum name="interaction_target_type" value="entity" />
+						<template_reference name="node_list_option" value="options\none">
+						</template_reference>
+						<bool name="block_pathing_when_interacted" value="False" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="1225118223" List.ParentItemID="1225118223">
+				<list name="abilities">
+					<instance_reference name="ability" value="abilities\always_on_abilities\japanese\shinto_sacred_object_buff_jpn" List.ItemID="-127269182" List.ListAction="Append" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1495990541" List.ParentItemID="1495990541">
+				<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\japanese\wonder_age4_nikko_toshogu_jpn" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="1073741838" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_siege_camp" mod="459dc75a89de413aba97f95a10099049" />
+	</variant>
+</instance>

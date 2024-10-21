@@ -1,0 +1,16 @@
+<instance version="4" description="" template="hotkeys\hotkey_binding">
+	<group name="hotkey_binding">
+		<bool name="allow_repeats" value="False" />
+		<string name="combo_primary" value="A" />
+		<string name="combo_secondary" value="" />
+		<bool name="essential" value="True" />
+		<bool name="ignore_alt" value="False" />
+		<bool name="ignore_shift" value="True" />
+		<bool name="significant" value="False" />
+		<locstring name="ui_name" value="11250707" />
+		<bool name="user_remappable" value="True" />
+		<locstring name="ui_prefix" value="0" />
+		<int name="ui_sort_priority" value="200" />
+	</group>
+	<uniqueid name="pbgid" value="1073741825" />
+</instance>

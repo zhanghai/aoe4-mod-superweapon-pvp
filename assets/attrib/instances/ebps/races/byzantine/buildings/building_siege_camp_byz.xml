@@ -1,0 +1,130 @@
+<instance version="6" override_type="merge" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1478573700" List.ParentItemID="1478573700">
+			<list name="requirement_table">
+				<template_reference name="required" value="requirements\required_not" List.ItemID="-1543773766" List.ParentItemID="-1543773766">
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="2137606291" List.ParentItemID="2137606291">
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_structure" List.ItemID="1765478421" List.ParentItemID="1765478421">
+									<instance_reference name="structure_name" value="ebps\races\byzantine\buildings\building_siege_camp_byz" mod="459dc75a89de413aba97f95a10099049" overrideParent="True" />
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="99019721" List.ParentItemID="99019721">
+			<group name="on_construction_complete_state_tree_refs">
+				<string name="on_construction_complete_entity_state_tree_ref" value="field_stones_logic_byz\field_stones_extra_large_byz" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1116699682" List.ParentItemID="1116699682">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\byzantine" overrideParent="True" List.ItemID="1499129841" List.ParentItemID="1499129841" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="-1263615228" List.ListAction="Append">
+			<bool name="update_on_upgrade_changed" value="False" />
+			<bool name="update_on_construction_complete" value="True" />
+			<list name="district_bonuses" overrideParent="True">
+				<template_reference name="district_bonus" value="district_bonus" comment="Cistern Influence" List.ItemID="-1301654940">
+					<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement">
+						<list name="dynamic_requirements">
+						</list>
+						<list name="satisfying_entity_groups" overrideParent="True">
+							<group name="satisfying_entity_group" List.ItemID="1930303115">
+								<list name="satisfying_entities" overrideParent="True">
+									<instance_reference name="entity" value="ebps\races\byzantine\buildings\building_cistern_byz" overrideParent="True" List.ItemID="-1385812580" />
+									<instance_reference name="entity" value="ebps\races\byzantine\buildings\building_landmark_age2_cistern_byz" List.ItemID="-1013352188" />
+								</list>
+							</group>
+						</list>
+					</template_reference>
+					<uniqueid name="id" value="1073741827" />
+					<template_reference name="action_tree" value="state_tree_reference_info">
+						<state_tree_node name="ActionTree_OpeningBranch" value="cistern_influence_byz" overrideParent="True" />
+						<bool name="start_suspended" value="False" />
+					</template_reference>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="-492245212" List.ListAction="Append">
+			<float name="range_metres" value="0" overrideParent="True" />
+			<int name="generator_value" value="0" overrideParent="True" />
+			<bool name="disable_generation_on_spawn" value="False" />
+			<bool name="is_root_generator" value="False" />
+			<int name="district_palette_id" value="0" />
+			<list name="requirements">
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741830" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_siege_camp" mod="459dc75a89de413aba97f95a10099049" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1798269813" List.ParentItemID="1798269813">
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_not" List.ItemID="1106786276" List.ParentItemID="1106786276">
+						<list name="requirement_table">
+							<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="2137606291" List.ParentItemID="2137606291">
+								<list name="requirements">
+									<template_reference name="requirement" value="requirements\required_structure" List.ItemID="1765478421" List.ParentItemID="1765478421">
+										<instance_reference name="structure_name" value="ebps\races\byzantine\buildings\building_siege_camp_byz" mod="459dc75a89de413aba97f95a10099049" overrideParent="True" />
+									</template_reference>
+								</list>
+							</template_reference>
+						</list>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-1283523120" List.ParentItemID="-1283523120">
+				<group name="on_construction_complete_state_tree_refs">
+					<string name="on_construction_complete_entity_state_tree_ref" value="field_stones_logic_byz\field_stones_extra_large_byz" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-787035535" List.ParentItemID="-787035535">
+				<list name="race_type_list">
+					<instance_reference name="race_type" value="racebps\byzantine" overrideParent="True" List.ItemID="2103749788" List.ParentItemID="2103749788" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="687734329" List.ListAction="Append">
+				<bool name="update_on_upgrade_changed" value="False" />
+				<bool name="update_on_construction_complete" value="True" />
+				<list name="district_bonuses" overrideParent="True">
+					<template_reference name="district_bonus" value="district_bonus" comment="Cistern Influence" List.ItemID="-1301654940">
+						<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement">
+							<list name="dynamic_requirements">
+							</list>
+							<list name="satisfying_entity_groups" overrideParent="True">
+								<group name="satisfying_entity_group" List.ItemID="1930303115">
+									<list name="satisfying_entities" overrideParent="True">
+										<instance_reference name="entity" value="ebps\races\byzantine\buildings\building_cistern_byz" overrideParent="True" List.ItemID="-1385812580" />
+										<instance_reference name="entity" value="ebps\races\byzantine\buildings\building_landmark_age2_cistern_byz" List.ItemID="-1013352188" />
+									</list>
+								</group>
+							</list>
+						</template_reference>
+						<uniqueid name="id" value="1073741828" />
+						<template_reference name="action_tree" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="cistern_influence_byz" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="1240263650" List.ListAction="Append">
+				<float name="range_metres" value="0" overrideParent="True" />
+				<int name="generator_value" value="0" overrideParent="True" />
+				<bool name="disable_generation_on_spawn" value="False" />
+				<bool name="is_root_generator" value="False" />
+				<int name="district_palette_id" value="0" />
+				<list name="requirements">
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="1073741830" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_siege_camp" mod="459dc75a89de413aba97f95a10099049" />
+	</variant>
+</instance>

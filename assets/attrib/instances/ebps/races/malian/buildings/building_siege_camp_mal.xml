@@ -1,0 +1,52 @@
+<instance version="6" override_type="merge" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1478573700" List.ParentItemID="1478573700">
+			<list name="requirement_table">
+				<template_reference name="required" value="requirements\required_not" List.ItemID="-1543773766" List.ParentItemID="-1543773766">
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="2137606291" List.ParentItemID="2137606291">
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_structure" List.ItemID="1765478421" List.ParentItemID="1765478421">
+									<instance_reference name="structure_name" value="ebps\races\malian\buildings\building_siege_camp_mal" mod="459dc75a89de413aba97f95a10099049" overrideParent="True" />
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1116699682" List.ParentItemID="1116699682">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\malian" overrideParent="True" List.ItemID="1499129841" List.ParentItemID="1499129841" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741839" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_siege_camp" mod="459dc75a89de413aba97f95a10099049" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1798269813" List.ParentItemID="1798269813">
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_not" List.ItemID="1106786276" List.ParentItemID="1106786276">
+						<list name="requirement_table">
+							<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="2137606291" List.ParentItemID="2137606291">
+								<list name="requirements">
+									<template_reference name="requirement" value="requirements\required_structure" List.ItemID="1765478421" List.ParentItemID="1765478421">
+										<instance_reference name="structure_name" value="ebps\races\malian\buildings\building_siege_camp_mal" mod="459dc75a89de413aba97f95a10099049" overrideParent="True" />
+									</template_reference>
+								</list>
+							</template_reference>
+						</list>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-787035535" List.ParentItemID="-787035535">
+				<list name="race_type_list">
+					<instance_reference name="race_type" value="racebps\malian" overrideParent="True" List.ItemID="2103749788" List.ParentItemID="2103749788" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="1073741839" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_siege_camp" mod="459dc75a89de413aba97f95a10099049" />
+	</variant>
+</instance>
