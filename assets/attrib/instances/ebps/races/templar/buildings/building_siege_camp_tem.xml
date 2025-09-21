@@ -1,0 +1,22 @@
+<instance version="6" override_type="merge" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1116699682" List.ParentItemID="1116699682">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\templar" overrideParent="True" List.ItemID="1499129841" List.ParentItemID="1499129841" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741845" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_siege_camp" mod="459dc75a89de413aba97f95a10099049" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-787035535" List.ParentItemID="-787035535">
+				<list name="race_type_list">
+					<instance_reference name="race_type" value="racebps\templar" overrideParent="True" List.ItemID="2103749788" List.ParentItemID="2103749788" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="1073741845" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_siege_camp" mod="459dc75a89de413aba97f95a10099049" />
+	</variant>
+</instance>
